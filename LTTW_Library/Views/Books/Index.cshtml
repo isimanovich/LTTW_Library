@@ -19,10 +19,10 @@ else
             <th>Title</th>
             <th>Author</th>
             <th>Publisher</th>
-            <th>ISBN</th>
+            <th>Genre</th>
             <th>Pages</th>
             <th>Stock</th>
-            <th>Genre</th>
+            <th>ISBN</th>
         </tr>
         </thead>
         <tbody>
@@ -33,10 +33,10 @@ else
                     <td>@Html.ActionLink(book.Title, "Details", "Books", new {id = book.Id}, null)</td>
                     <td>@book.Author</td>
                     <td>@book.Publisher</td>
-                    <td>@book.Isbn</td>
+                    <td>@book.Genre.Name</td>
                     <td>@book.Pages</td>
                     <td>@book.Stock</td>
-                    <td>@book.Genre.Name</td>
+                    <td>@book.Isbn</td>
                 </tr>
             }
         </tbody>
